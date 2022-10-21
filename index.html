@@ -28,7 +28,16 @@
       </div>
     </div>
 
-    <h3>Transações</h3>
+    <div class="display-title">
+      <h3>Transações</h3>
+      <select name="filtro" id="filter" class="display-filter">
+        <option value="todos">Todos</option>
+        <option value="nubank">Nubank</option>
+        <option value="credicard">Credicard</option>
+        <option value="outro">Outro</option>
+      </select>
+    </div>
+
 
     <ul id="transactions" class="transactions"></ul>
 
@@ -47,6 +56,14 @@
         <input type="number" id="amount" placeholder="Valor da transação" />
       </div>
 
+      <div class="form-control">
+        <label for="text">Categoria</label>
+        <select name="category" id="category-add">
+          <option value="nubank">Nubank</option>
+          <option value="credicard">Credicard</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
       <button class="btn">Adicionar</button>
     </form>
   </div>
